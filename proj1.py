@@ -1,9 +1,12 @@
+# imports
 import time
 import webbrowser
-  
+
+# variables
 tot_breaks = 300
 cnt_break  = 0
 
+# end timestamp
 print("Started: " + time.ctime())
 
 def do_it():
@@ -12,11 +15,14 @@ def do_it():
     webbrowser.open("https://www.youtube.com/watch?v=qh7fQFQHuPs")
     webbrowser.open("https://www.youtube.com/watch?v=hnqL8KS31I0")
 
-do_it()
-
 while (cnt_break < tot_breaks):
-    do_it()
-    time.sleep(3*60)
-    cnt_break = cnt_break + 1
+    # perform action once
+	do_it()
+	
+    # perform action every 3 mins
+	time.sleep(3*60)
+    
+	cnt_break = cnt_break + 1
 
+# end timestamp
 print("Ended: " + time.ctime())
