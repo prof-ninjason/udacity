@@ -25,4 +25,4 @@ while (cnt_break < tot_breaks):
 	cnt_break = cnt_break + 1
 
 # end timestamp
-print("Ended: " + time.ctime(1))
+print("Ended: " + time.ctime())

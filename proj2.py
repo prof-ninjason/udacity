@@ -18,4 +18,4 @@ def rename_files():
 
     os.chdir(saved_path)
 
-rename_files(1)
+rename_files()
