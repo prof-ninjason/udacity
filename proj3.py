@@ -25,4 +25,4 @@ def open_window():
 #     move_brad(brad)
     window.exitonclick()
 
-open_window()
+open_window(1)
